@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoView — экология и защита планеты">
+  <title>EcoView — Планета в наших руках</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-bar" id="pageProgress"></div>
+
+  <header class="header">
+    <a class="logo" href="#home">🌿 EcoView</a>
+
+    <nav>
+      <a href="#about" data-i18n="navAbout">О проекте</a>
+      <a href="#problems" data-i18n="navProblems">Проблемы</a>
+      <a href="#actions" data-i18n="navActions">Решения</a>
+      <a href="#quiz" data-i18n="navQuiz">Викторина</a>
+    </nav>
+
+    <div class="header-controls">
+      <label class="sr-only" for="languageSelect">Language</label>
+      <select id="languageSelect" class="language-select" aria-label="Language">
+        <option value="ru">🇷🇺 RU</option>
+        <option value="en">🇬🇧 EN</option>
+        <option value="uz">🇺🇿 UZ</option>
+      </select>
+      <button id="themeToggle" class="theme-button" aria-label="Переключить тему">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <span class="eyebrow" data-i18n="eyebrow">🌍 Наш дом — наша ответственность</span>
+        <h1 data-i18n="heroTitle">Будущее планеты <span>начинается с нас</span></h1>
+        <p data-i18n="heroText">Экология — это наш воздух, вода, леса и жизнь будущих поколений.</p>
+        <div class="hero-buttons">
+          <a href="#actions" class="button primary" data-i18n="heroButton">Начать с малого</a>
+          <a href="#about" class="button secondary" data-i18n="learnMore">Узнать больше</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet">🌎</div>
+        <span class="floating leaf-one">🍃</span>
+        <span class="floating leaf-two">🌱</span>
+        <span class="floating leaf-three">🦋</span>
+        <span class="floating leaf-four">✨</span>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">↓</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="aboutLabel">О проекте</span>
+        <h2 data-i18n="aboutTitle">Почему экология важна?</h2>
+        <p data-i18n="aboutText">Здоровая планета — основа благополучия людей и всех живых организмов.</p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card reveal">
+          <span class="stat-icon">🌳</span>
+          <h3 data-i18n="forestTitle">Леса</h3>
+          <p data-i18n="forestText">Поддерживают биоразнообразие и поглощают углекислый газ.</p>
+        </article>
+        <article class="stat-card reveal">
+          <span class="stat-icon">💧</span>
+          <h3 data-i18n="waterTitle">Чистая вода</h3>
+          <p data-i18n="waterText">Необходима людям, животным и растениям.</p>
+        </article>
+        <article class="stat-card reveal">
+          <span class="stat-icon">☀️</span>
+          <h3 data-i18n="energyTitle">Чистая энергия</h3>
+          <p data-i18n="energyText">Солнечная и ветровая энергия помогают уменьшать выбросы.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section problems-section" id="problems">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="problemLabel">Вызовы планеты</span>
+        <h2 data-i18n="problemTitle">Главные экологические проблемы</h2>
+      </div>
+
+      <div class="problems-grid">
+        <article class="problem-card reveal">
+          <div class="problem-image air"><span>🌫️</span></div>
+          <div class="card-body">
+            <h3 data-i18n="airTitle">Загрязнение воздуха</h3>
+            <p data-i18n="airText">Транспорт и промышленность ухудшают качество воздуха.</p>
+            <span class="tag" data-i18n="airTag">Качество воздуха</span>
+          </div>
+        </article>
+
+        <article class="problem-card reveal">
+          <div class="problem-image plastic"><span>♻️</span></div>
+          <div class="card-body">
+            <h3 data-i18n="plasticTitle">Пластиковые отходы</h3>
+            <p data-i18n="plasticText">Пластик загрязняет почву, реки и океаны.</p>
+            <span class="tag" data-i18n="plasticTag">Отходы</span>
+          </div>
+        </article>
+
+        <article class="problem-card reveal">
+          <div class="problem-image climate"><span>🌡️</span></div>
+          <div class="card-body">
+            <h3 data-i18n="climateTitle">Изменение климата</h3>
+            <p data-i18n="climateText">Парниковые газы усиливают глобальное потепление.</p>
+            <span class="tag" data-i18n="climateTag">Климат</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dashboard" id="data">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="dataLabel">Экологические данные</span>
+        <h2 data-i18n="dataTitle">Изучай изменения</h2>
+        <p data-i18n="dataText">Демонстрационный график с условными значениями.</p>
+      </div>
+
+      <div class="chart-panel reveal">
+        <div class="chart-controls">
+          <label for="chartMetric" data-i18n="metricLabel">Показатель:</label>
+          <select id="chartMetric">
+            <option value="temperature" data-i18n="metricTemp">Условная температура</option>
+            <option value="emissions" data-i18n="metricEmissions">Индекс выбросов</option>
+            <option value="recycling" data-i18n="metricRecycling">Доля переработки</option>
+          </select>
+        </div>
+        <canvas id="ecoChart" height="300"></canvas>
+        <p class="chart-note" id="chartNote"></p>
+      </div>
+    </section>
+
+    <section class="section actions-section" id="actions">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="actionsLabel">Действуй сегодня</span>
+        <h2 data-i18n="actionsTitle">7 способов помочь планете</h2>
+        <p data-i18n="actionsText">Отмечай полезные привычки и следи за своим прогрессом.</p>
+      </div>
+
+      <div class="action-list reveal">
+        <label class="action-item"><input type="checkbox"><span data-i18n="action1">♻️ Сортировать отходы и сдавать вторсырьё.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action2">🚰 Экономить воду дома.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action3">💡 Выключать ненужный свет.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action4">🛍️ Использовать многоразовую сумку.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action5">🚲 Чаще ходить пешком или ездить на велосипеде.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action6">🌱 Беречь растения и природу.</span></label>
+        <label class="action-item"><input type="checkbox"><span data-i18n="action7">📚 Делиться проверенной экологической информацией.</span></label>
+      </div>
+      <p class="progress-text" id="progressText"></p>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="quiz-box reveal">
+        <span class="eyebrow" data-i18n="quizLabel">Проверь себя</span>
+        <h2 data-i18n="quizTitle">Экологическая викторина 🌿</h2>
+        <p id="question"></p>
+        <div class="answers" id="answers"></div>
+        <p id="quizResult" role="status" aria-live="polite"></p>
+        <button class="button primary" id="nextQuestion" data-i18n="nextQuestion">Следующий вопрос</button>
+        <p class="quiz-score" id="quizScore"></p>
+      </div>
+    </section>
+
+    <section class="call-to-action reveal">
+      <div class="cta-glow"></div>
+      <h2 data-i18n="ctaTitle">Маленькие действия создают большие перемены.</h2>
+      <p data-i18n="ctaText">Начни сегодня — ради чистой и здоровой планеты.</p>
+      <a href="#actions" class="button light" data-i18n="ctaButton">Мой экологический план</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">🌿 EcoView</a>
+    <p data-i18n="footerText">Учебный проект об экологии и защите окружающей среды.</p>
+    <p>© <span id="year"></span> EcoView</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
